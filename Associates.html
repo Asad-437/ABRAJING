@@ -126,6 +126,7 @@ html {
 /* Style for Submenu */
 .submenu {
     display: none;
+
     position: absolute;
      /* background-color: #444;  */
     border-top: 1px solid #333;
@@ -136,59 +137,62 @@ li:hover .submenu {
 }
 
 .submenu li {
+  /* text-align: left; */
     display: block;
 }
-
 /* container styling */
 .container1{
 display: flex;
   flex-wrap: wrap;
-  width: 100%;
-  background-color: dimgray;
-  height:120%;
   border-radius: 30px;
-  margin-top: 40px;
-
+  background-color: dimgray;
+  max-width: 100%;
+  justify-content: space-between;
+  height:120%;
+  margin-top: 80px;
 }
 .container1 img{
   width:310px;
- margin-left:700px ;
  border-radius: 30px;
- margin-top: 15px;
-  height:310px;
-
+ margin-right: 20px;
+ margin-bottom: 10px;
+ margin-top: 17px;
+  height:330px;
 }
 .container1 ul{
   margin-left: 60px;
   margin-top: 15px;
   font-size: larger;
 }
+.container1 h1{
+  margin-top: 20px;
+}
 .container1 h1,h3{
   margin-left: 60px;
-
 }
 .container1 p{
 margin-left: 45px;
 font-size: larger;
 }
+
+
 /* container2 */
 .container2{
 display: flex;
   flex-wrap: wrap;
   border-radius: 30px;
   background-color: dimgray;
-  width: 100%;
+  max-width: 100%;
+  justify-content: space-between;
   height:120%;
   margin-top: 80px;
-
 }
 .container2 img{
-  width:310px;
- margin-left:750px ;
+  max-width:310px;
+  margin-right: 20px;
  border-radius: 30px;
  margin-top: 17px;
-  height:310px;
-
+  height:350px;
 }
 .container2 ul{
   margin-left: 60px;
@@ -197,19 +201,11 @@ display: flex;
 }
 .container2 h1,h3{
   margin-left: 60px;
-
 }
 .container2 p{
 margin-left: 45px;
 font-size: larger;
 }
-/* .container2 h4{
-  margin-left: 40px;
-font-size: large;
-margin-top: 10px;
-margin-bottom: 10px;
-} */
-
 /* container5 */
 .container5{
 display: flex;
@@ -217,17 +213,15 @@ border-radius: 30px;
   background-color: dimgray;
   flex-wrap: wrap;
   width: 100%;
+  justify-content: space-between;
   height:120%;
   margin-top: 80px;
-
 }
 .container5 img{
   width:310px;
- margin-left:920px ;
+  margin-right: 20px;
  border-radius: 30px;
- /* margin-top: -5px; */
   height:310px;
-
 }
 .container5 ul{
   margin-left: 60px;
@@ -236,31 +230,27 @@ border-radius: 30px;
 }
 .container5 h1,h3{
   margin-left: 60px;
-
 }
 .container5 p{
 margin-left: 45px;
 font-size: larger;
 }
-
 /* container3  */
 .container3{
 display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
   width: 100%;
   height:120%;
   border-radius: 30px;
   background-color: dimgray;
   margin-top: 80px;
-
 }
 .container3 img{
   width:310px;
- margin-left:840px ;
  border-radius: 30px;
- /* margin-top: -5px; */
+ margin-right: 20px;
   height:310px;
-
 }
 .container3 ul{
   margin-left: 60px;
@@ -269,7 +259,6 @@ display: flex;
 }
 .container3 h1,h3{
   margin-left: 60px;
-
 }
 .container3 p{
 margin-left: 45px;
@@ -280,19 +269,17 @@ font-size: larger;
 display: flex;
   flex-wrap: wrap;
   width: 100%;
+  justify-content: space-between;
   border-radius: 30px;
   background-color: dimgray;
   height:120%;
   margin-top: 80px;
-
 }
 .container4 img{
   width:310px;
- margin-left:800px ;
+  margin-right: 20px;
  border-radius: 30px;
- /* margin-top: -5px; */
   height:310px;
-
 }
 .container4 ul{
   margin-left: 60px;
@@ -300,14 +287,11 @@ display: flex;
   font-size: larger;
 }
 .container4 h1,h3{
-  /* margin-top: 20px; */
   margin-left: 60px;
-
 }
 
 .container4 h1{
   margin-top: 20px;
-
 }
 
 .container4 p{
@@ -351,1941 +335,357 @@ footer .footer-text{
   text-align: center;
 }
 
-  @media only screen and (max-width: 310px) {
-  .navbar {
-    text-align: center;
-  }
 
-  .menu {
-    display:block;
-  }
-
-  .hero-container,
-
-  .container1,
-  .container2,
-  .container3,
-  .container4,
-  .container5 {
-    padding: 10px;
-    box-sizing: border-box;
-  }
-
-  .container1 h1,
-  .container2 h1,
-  .container3 h1,
-  .container4 h1,
-  .container5 h1 {
- font-size: 25px;
- font-weight: bolder;
-  }
-
- .container1 img  {
-    width: 100%;
-    right:200px;
- 
-    margin: 0;
-    margin-left: 20px;
-  }
-  .container5 img  {
-    width: 100%;
-    right:200px;
- 
-    margin: 0;
-    margin-left: 20px;
-  }
-
-
-
-  .main-heading {
-    font-size: 20px !important; /* Override any conflicting styles */
-  }
-
-  .main-para {
-    font-size: 12px;
-  }
-
-  .advo,
-  .advo3,
-  .nisa,
-  .advo1,
-  .MALIK {
-    padding: 10px;
-    width: 100%;
-    box-sizing: border-box;
-    margin: 0;
-  }
-
-
-
-
-
-
-
-
-  .sub-heading {
-    font-size: 16px;
-  }
-
-  .prof-name {
-    font-size: 18px;
-  }
-
-  ul {
-    padding-left: 15px;
-    list-style-type: circle;
-   
-  }
-li{
-  margin-left: -18px;
-  font-size: 17px;
-
-}
-ul{
-  line-height: 20px;
-}
-  .container2 img,
-  
-  .container3 img,
-  .container4 img
- 
-  
-  
-  {
-    width: 100%;
-    right:300px;
-    /* box-sizing: border-box; */
-    margin: 0;
-  }
-
-  .footer-container {
-    padding: 10px;
-    box-sizing: border-box;
-  }
-
-  .end {
-    text-align: center;
-    margin-bottom: 10px;
-  }
-
-  .footer-text {
-    font-size: 12px;
-  }
-
-  /* Add more specific styles as needed for other elements */
-}
-
-
-
-
-
-@media only screen and (max-width: 350px) {
-  .navbar {
-    text-align: center;
-  }
-
-  .menu {
-    display:block;
-  }
-
-  .hero-container,
-
-  .container1,
-  .container2,
-  .container3,
-  .container4,
-  .container5 {
-    padding: 10px;
-    box-sizing: border-box;
-  }
-
-  .container1 h1,
-  .container2 h1,
-  .container3 h1,
-  .container4 h1,
-  .container5 h1 {
- font-size: 25px;
- font-weight: bolder;
-  }
-
- .container1 img  {
-    width: 100%;
-    right:200px;
- 
-    margin: 0;
-    margin-left: 20px;
-  }
-  .container5 img  {
-    width: 100%;
-    right:200px;
- 
-    margin: 0;
-    margin-left: 20px;
-  }
-
-
-
-  .main-heading {
-    font-size: 20px !important; /* Override any conflicting styles */
-  }
-
-  .main-para {
-    font-size: 12px;
-  }
-
-  .advo,
-  .advo3,
-  .nisa,
-  .advo1,
-  .MALIK {
-    padding: 10px;
-    width: 100%;
-    box-sizing: border-box;
-    margin: 0;
-  }
-
-
-
-
-
-
-
-
-  .sub-heading {
-    font-size: 16px;
-  }
-
-  .prof-name {
-    font-size: 18px;
-  }
-
-  ul {
-    padding-left: 15px;
-    list-style-type: circle;
-   
-  }
-li{
-  margin-left: -18px;
-  font-size: 17px;
-
-}
-ul{
-  line-height: 20px;
-}
-  .container2 img,
-  
-  .container3 img,
-  .container4 img
- 
-  
-  
-  {
-    width: 100%;
-    right:300px;
-    /* box-sizing: border-box; */
-    margin: 0;
-  }
-
-  .footer-container {
-    padding: 10px;
-    box-sizing: border-box;
-  }
-
-  .end {
-    text-align: center;
-    margin-bottom: 10px;
-  }
-
-  .footer-text {
-    font-size: 12px;
-  }
-
-  /* Add more specific styles as needed for other elements */
-}
-
-
-@media only screen and (max-width: 368px) {
-  .navbar {
-    text-align: center;
-  }
-
-  .menu {
-    display:block;
-  }
-
-  .hero-container,
-
-  .container1,
-  .container2,
-  .container3,
-  .container4,
-  .container5 {
-    padding: 10px;
-    box-sizing: border-box;
-  }
-
-  .container1 h1,
-  .container2 h1,
-  .container3 h1,
-  .container4 h1,
-  .container5 h1 {
- font-size: 25px;
- font-weight: bolder;
-  }
-
- .container1 img  {
-    width: 100%;
-    right:200px;
- 
-    margin: 0;
-    margin-left: 20px;
-  }
-  .container5 img  {
-    width: 100%;
-    right:200px;
- 
-    margin: 0;
-    margin-left: 20px;
-  }
-
-
-
-  .main-heading {
-    font-size: 20px !important; /* Override any conflicting styles */
-  }
-
-  .main-para {
-    font-size: 12px;
-  }
-
-  .advo,
-  .advo3,
-  .nisa,
-  .advo1,
-  .MALIK {
-    padding: 10px;
-    width: 100%;
-    box-sizing: border-box;
-    margin: 0;
-  }
-
-
-
-
-
-
-
-
-  .sub-heading {
-    font-size: 16px;
-  }
-
-  .prof-name {
-    font-size: 18px;
-  }
-
-  ul {
-    padding-left: 15px;
-    list-style-type: circle;
-   
-  }
-li{
-  margin-left: -18px;
-  font-size: 17px;
-
-}
-ul{
-  line-height: 20px;
-}
-  .container2 img,
-  
-  .container3 img,
-  .container4 img
- 
-  
-  
-  {
-    width: 100%;
-    right:300px;
-    /* box-sizing: border-box; */
-    margin: 0;
-  }
-
-  .footer-container {
-    padding: 10px;
-    box-sizing: border-box;
-  }
-
-  .end {
-    text-align: center;
-    margin-bottom: 10px;
-  }
-
-  .footer-text {
-    font-size: 12px;
-  }
-
-  /* Add more specific styles as needed for other elements */
-}
-
-
-
-@media only screen and (max-width: 418px) {
-  .navbar {
-    text-align: center;
-  }
-
-  .menu {
-    display:block;
-  }
-
-  .hero-container,
-
-  .container1,
-  .container2,
-  .container3,
-  .container4,
-  .container5 {
-    padding: 10px;
-    box-sizing: border-box;
-  }
-
-  .container1 h1,
-  .container2 h1,
-  .container3 h1,
-  .container4 h1,
-  .container5 h1 {
- font-size: 25px;
- font-weight: bolder;
-  }
-
- .container1 img  {
-    width: 100%;
-    right:200px;
- 
-    margin: 0;
-    margin-left: 20px;
-  }
-  .container5 img  {
-    width: 100%;
-    right:200px;
- 
-    margin: 0;
-    margin-left: 20px;
-  }
-
-
-
-  .main-heading {
-    font-size: 20px !important; /* Override any conflicting styles */
-  }
-
-  .main-para {
-    font-size: 12px;
-  }
-
-  .advo,
-  .advo3,
-  .nisa,
-  .advo1,
-  .MALIK {
-    padding: 10px;
-    width: 100%;
-    box-sizing: border-box;
-    margin: 0;
-  }
-
-
-
-
-
-
-
-
-  .sub-heading {
-    font-size: 16px;
-  }
-
-  .prof-name {
-    font-size: 18px;
-  }
-
-  ul {
-    padding-left: 15px;
-    list-style-type: circle;
-   
-  }
-li{
-  margin-left: -18px;
-  font-size: 17px;
-
-}
-ul{
-  line-height: 20px;
-}
-  .container2 img,
-  
-  .container3 img,
-  .container4 img
- 
-  
-  
-  {
-    width: 100%;
-    right:300px;
-    /* box-sizing: border-box; */
-    margin: 0;
-  }
-
-  .footer-container {
-    padding: 10px;
-    box-sizing: border-box;
-  }
-
-  .end {
-    text-align: center;
-    margin-bottom: 10px;
-  }
-
-  .footer-text {
-    font-size: 12px;
-  }
-
-  /* Add more specific styles as needed for other elements */
-}
-
-
-@media only screen and (max-width: 500px) {
-  .navbar {
-    text-align: center;
-  }
-
-  .menu {
-    display:block;
-  }
-
-  .hero-container,
-
-  .container1,
-  .container2,
-  .container3,
-  .container4,
-  .container5 {
-    padding: 10px;
-    box-sizing: border-box;
-  }
-
-  .container1 h1,
-  .container2 h1,
-  .container3 h1,
-  .container4 h1,
-  .container5 h1 {
- font-size: 25px;
- font-weight: bolder;
-  }
-
- .container1 img  {
-    width: 100%;
-    right:200px;
- 
-    margin: 0;
-    margin-left: 20px;
-  }
-  .container5 img  {
-    width: 100%;
-    right:200px;
- 
-    margin: 0;
-    margin-left: 20px;
-  }
-
-
-
-  .main-heading {
-    font-size: 20px !important; /* Override any conflicting styles */
-  }
-
-  .main-para {
-    font-size: 12px;
-  }
-
-  .advo,
-  .advo3,
-  .nisa,
-  .advo1,
-  .MALIK {
-    padding: 10px;
-    width: 100%;
-    box-sizing: border-box;
-    margin: 0;
-  }
-
-
-
-
-
-
-
-
-  .sub-heading {
-    font-size: 16px;
-  }
-
-  .prof-name {
-    font-size: 18px;
-  }
-
-  ul {
-    padding-left: 15px;
-    list-style-type: circle;
-   
-  }
-li{
-  margin-left: -18px;
-  font-size: 17px;
-
-}
-ul{
-  line-height: 20px;
-}
-  .container2 img,
-  
-  .container3 img,
-  .container4 img
- 
-  
-  
-  {
-    width: 100%;
-    right:300px;
-    /* box-sizing: border-box; */
-    margin: 0;
-  }
-
-  .footer-container {
-    padding: 10px;
-    box-sizing: border-box;
-  }
-
-  .end {
-    text-align: center;
-    margin-bottom: 10px;
-  }
-
-  .footer-text {
-    font-size: 12px;
-  }
-
-  /* Add more specific styles as needed for other elements */
-}
-
-@media only screen and (max-width: 558px) {
-  .navbar {
-    text-align: center;
-  }
-
-  .menu {
-    display:block;
-  }
-
-  .hero-container,
-
-  .container1,
-  .container2,
-  .container3,
-  .container4,
-  .container5 {
-    padding: 10px;
-    box-sizing: border-box;
-  }
-
-  .container1 h1,
-  .container2 h1,
-  .container3 h1,
-  .container4 h1,
-  .container5 h1 {
- font-size: 25px;
- font-weight: bolder;
-  }
-
- .container1 img  {
-    width: 100%;
-    right:200px;
- 
-    margin: 0;
-    margin-left: 20px;
-  }
-  .container5 img  {
-    width: 100%;
-    right:200px;
- 
-    margin: 0;
-    margin-left: 20px;
-  }
-
-
-
-  .main-heading {
-    font-size: 20px !important; /* Override any conflicting styles */
-  }
-
-  .main-para {
-    font-size: 12px;
-  }
-
-  .advo,
-  .advo3,
-  .nisa,
-  .advo1,
-  .MALIK {
-    padding: 10px;
-    width: 100%;
-    box-sizing: border-box;
-    margin: 0;
-  }
-  .sub-heading {
-    font-size: 16px;
-  }
-
-  .prof-name {
-    font-size: 18px;
-  }
-
-  ul {
-    padding-left: 15px;
-    list-style-type: circle;
-   
-  }
-li{
-  margin-left: -18px;
-  font-size: 17px;
-
-}
-ul{
-  line-height: 20px;
-}
-  .container2 img,
-  
-  .container3 img,
-  .container4 img
- 
-  
-  
-  {
-    width: 100%;
-    right:300px;
-    /* box-sizing: border-box; */
-    margin: 0;
-  }
-
-  .footer-container {
-    padding: 10px;
-    box-sizing: border-box;
-  }
-
-  .end {
-    text-align: center;
-    margin-bottom: 10px;
-  }
-
-  .footer-text {
-    font-size: 12px;
-  }
-
-  /* Add more specific styles as needed for other elements */
-}
-
-@media only screen and (max-width: 654px) {
-  .navbar {
-    text-align: center;
-  }
-
-  .menu {
-    display:block;
-  }
-
-  .hero-container,
-
-  .container1,
-  .container2,
-  .container3,
-  .container4,
-  .container5 {
-    padding: 10px;
-    box-sizing: border-box;
-  }
-
-  .container1 h1,
-  .container2 h1,
-  .container3 h1,
-  .container4 h1,
-  .container5 h1 {
- font-size: 25px;
- font-weight: bolder;
-  }
-
- .container1 img  {
-    width: 100%;
-    right:200px;
- 
-    margin: 0;
-    margin-left: 20px;
-  }
-  .container5 img  {
-    width: 100%;
-    right:200px;
- 
-    margin: 0;
-    margin-left: 20px;
-  }
-
-
-
-  .main-heading {
-    font-size: 20px !important; /* Override any conflicting styles */
-  }
-
-  .main-para {
-    font-size: 12px;
-  }
-
-  .advo,
-  .advo3,
-  .nisa,
-  .advo1,
-  .MALIK {
-    padding: 10px;
-    width: 100%;
-    box-sizing: border-box;
-    margin: 0;
-  }
-
-  .sub-heading {
-    font-size: 16px;
-  }
-
-  .prof-name {
-    font-size: 18px;
-  }
-
-  ul {
-    padding-left: 15px;
-    list-style-type: circle;
-   
-  }
-li{
-  margin-left: -18px;
-  font-size: 17px;
-
-}
-ul{
-  line-height: 20px;
-}
-  .container2 img,
-  
-  .container3 img,
-  .container4 img
- 
-  
-  
-  {
-    width: 100%;
-    right:300px;
-    /* box-sizing: border-box; */
-    margin: 0;
-  }
-
-  .footer-container {
-    padding: 10px;
-    box-sizing: border-box;
-  }
-
-  .end {
-    text-align: center;
-    margin-bottom: 10px;
-  }
-
-  .footer-text {
-    font-size: 12px;
-  }
-
-  /* Add more specific styles as needed for other elements */
-}
-
-@media only screen and (max-width: 700px) {
-  .navbar {
-    text-align: center;
-  }
-
-  .menu {
-    display:block;
-  }
-
-  .hero-container,
-
-  .container1,
-  .container2,
-  .container3,
-  .container4,
-  .container5 {
-    padding: 10px;
-    box-sizing: border-box;
-  }
-
-  .container1 h1,
-  .container2 h1,
-  .container3 h1,
-  .container4 h1,
-  .container5 h1 {
- font-size: 25px;
- font-weight: bolder;
-  }
-
- .container1 img  {
-    width: 100%;
-    right:200px;
- 
-    margin: 0;
-    margin-left: 20px;
-  }
-  .container5 img  {
-    width: 100%;
-    right:200px;
- 
-    margin: 0;
-    margin-left: 20px;
-  }
-
-
-
-  .main-heading {
-    font-size: 20px !important; /* Override any conflicting styles */
-  }
-
-  .main-para {
-    font-size: 12px;
-  }
-
-  .advo,
-  .advo3,
-  .nisa,
-  .advo1,
-  .MALIK {
-    padding: 10px;
-    width: 100%;
-    box-sizing: border-box;
-    margin: 0;
-  }
-
-  .sub-heading {
-    font-size: 16px;
-  }
-
-  .prof-name {
-    font-size: 18px;
-  }
-
-  ul {
-    padding-left: 15px;
-    list-style-type: circle;
-   
-  }
-li{
-  margin-left: -18px;
-  font-size: 17px;
-
-}
-ul{
-  line-height: 20px;
-}
-  .container2 img,
-  
-  .container3 img,
-  .container4 img
- 
-  
-  
-  {
-    width: 100%;
-    right:300px;
-    /* box-sizing: border-box; */
-    margin: 0;
-  }
-
-  .footer-container {
-    padding: 10px;
-    box-sizing: border-box;
-  }
-
-  .end {
-    text-align: center;
-    margin-bottom: 10px;
-  }
-
-  .footer-text {
-    font-size: 12px;
-  }
-
-  /* Add more specific styles as needed for other elements */
-}
-
-
-@media only screen and (max-width: 750px) {
-  .navbar {
-    text-align: center;
-  }
-
-  .menu {
-    display:block;
-  }
-
-  .hero-container,
-
-  .container1,
-  .container2,
-  .container3,
-  .container4,
-  .container5 {
-    padding: 10px;
-    box-sizing: border-box;
-  }
-
-  .container1 h1,
-  .container2 h1,
-  .container3 h1,
-  .container4 h1,
-  .container5 h1 {
- font-size: 25px;
- font-weight: bolder;
-  }
-
- .container1 img  {
-    width: 100%;
-    right:200px;
- 
-    margin: 0;
-    margin-left: 70px;
-  }
-  .container5 img  {
-    width: 100%;
-    right:200px;
- 
-    margin: 0;
-    margin-left: 70px;
-  }
-
-
-
-  .main-heading {
-    font-size: 20px !important; /* Override any conflicting styles */
-  }
-
-  .main-para {
-    font-size: 12px;
-  }
-
-  .advo,
-  .advo3,
-  .nisa,
-  .advo1,
-  .MALIK {
-    padding: 10px;
-    width: 100%;
-    box-sizing: border-box;
-    margin: 0;
-  }
-
-  .sub-heading {
-    font-size: 16px;
-  }
-
-  .prof-name {
-    font-size: 18px;
-  }
-
-  ul {
-    padding-left: 15px;
-    list-style-type: circle;
-   
-  }
-li{
-  margin-left: -18px;
-  font-size: 17px;
-
-}
-ul{
-  line-height: 20px;
-}
-  .container2 img,
-  
-  .container3 img,
-  .container4 img
- 
-  
-  
-  {
-    width: 100%;
-    right:300px;
-    /* box-sizing: border-box; */
-    margin: 0;
-
-    margin-left:70px ;
-  }
-
-  .footer-container {
-    padding: 10px;
-    box-sizing: border-box;
-    display: block;
-
-  }
-#end1,
-#end2,
-#end3{
-  margin-left: 40px;
-   
-}
-.footer-container h1{
-/* justify-content: center; */
-text-align: center;
-   
-}
-
-
-  .end {
-    text-align: center;
-    margin-bottom: 10px;
-  }
-
-  .footer-text {
-    font-size: 12px;
-  }
-
-  /* Add more specific styles as needed for other elements */
-}
-
-@media only screen and (max-width: 890px) {
-  .navbar {
-    text-align: center;
-  }
-
-  .menu {
-    display:block;
-  }
-
-  .hero-container,
-
-  .container1,
-  .container2,
-  .container3,
-  .container4,
-  .container5 {
-    padding: 10px;
-    box-sizing: border-box;
-  }
-
-  .container1 h1,
-  .container2 h1,
-  .container3 h1,
-  .container4 h1,
-  .container5 h1 {
- font-size: 25px;
- font-weight: bolder;
-  }
-
- .container1 img  {
-    width: 100%;
-    right:200px;
- 
-    margin: 0;
-    margin-left: 70px;
-  }
-  .container5 img  {
-    width: 100%;
-    right:200px;
- 
-    margin: 0;
-    margin-left: 70px;
-  }
-  .main-heading {
-    font-size: 20px !important; /* Override any conflicting styles */
-  }
-
-  .main-para {
-    font-size: 12px;
-  }
-
-  .advo,
-  .advo3,
-  .nisa,
-  .advo1,
-  .MALIK {
-    padding: 10px;
-    width: 100%;
-    box-sizing: border-box;
-    margin: 0;
-  }
-
-  .sub-heading {
-    font-size: 16px;
-  }
-
-  .prof-name {
-    font-size: 18px;
-  }
-
-  ul {
-    padding-left: 15px;
-    list-style-type: circle;
-   
-  }
-li{
-  margin-left: -18px;
-  font-size: 17px;
-
-}
-ul{
-  line-height: 20px;
-}
-  .container2 img,
-  
-  .container3 img,
-  .container4 img
- 
-  
-  
-  {
-    width: 100%;
-    right:300px;
-    /* box-sizing: border-box; */
-    margin: 0;
-
-    margin-left:70px ;
-  }
-
-  .footer-container {
-    padding: 10px;
-    box-sizing: border-box;
-    /* display: block; */
-
-  }
-
-
-
-  .end {
-    text-align: center;
-    margin-bottom: 10px;
-  }
-
-  .footer-text {
-    font-size: 12px;
-  }
-
-  /* Add more specific styles as needed for other elements */
-}
-
-
-@media screen and (max-width: 920px)
+@media only screen and (max-width: 310px) {}
+@media only screen and (max-width: 350px) {}
+@media only screen and (max-width: 370px) {}
+@media only screen and (max-width: 480px) 
 {
-  li {
+.main-heading{
+  font-size: 24px;
+}
+.main-para p{
+  font-size: 16px;
+}
+  .content-wrapping{
+  flex-wrap: wrap;
+  display:block;
+  }
+  .profile-section{
+    flex-wrap: wrap;
+    display:block;
+  }
+.profile-container{
+  flex-wrap: wrap;
+    display:block;
+}
+.content-main-div{
+  flex-wrap: wrap;
+  /* display:block; */
+}
+.image-div{
+  margin-top: 30px;
+  /* margin-right: 20px; */
+  margin-right:5px;
+}
+ .footer-container{
+flex-wrap: wrap;
+display:block;
+}
+.default-container img{
+  margin-right: -240px;
+}
+.footer-section{
+flex-wrap: wrap;
+  display:block;
+      }
+    .menu  li {
         display: block;
         width: 100%;
     }
-    ul ul {
+
+   .submenu  ul ul {
         position: static;
         display: none;
     }
-   li:hover > ul {
+
+    li:hover > ul {
         display: none;
     }
-   .menu li{
+
+    .default-container img{
+  margin-right: -240px;
+}
+.menu li{
   position: relative;
 }
 .submenu li{
   width: 100%;
   z-index: 300;
 }
+
 .submenu{
-  left:-100px;
+  left:-140px;
   top:0;
 }
-.container1{
-  width: 100%;
-  flex-wrap: wrap;
-}
-.container1 img{
-margin-left: 55px;
-}
-
-.container1 h1 ,h3{
-margin-left: 20px;
-}
-.container1 ul{
-margin-left: 20px;
-}
-.container1 p{
-margin-left: 20px;
-}
-.container2{
-  flex-wrap: wrap;
-}
-.container2 img{
-margin-left: 55px;
-}
-
-.container2 h1 ,h3{
-margin-left: 20px;
-}
-.container2 ul{
-margin-left: 20px;
-}
-.container2 p{
-margin-left: 20px;
-}
-.container5{
-  flex-wrap: wrap;
-}
-.container5 h1 ,h3{
-margin-left: 20px;
-}
-.container5 ul{
-margin-left: 20px;
-}
-.container5 p{
-margin-left: 20px;
-}
-.container5 img{
-margin-left: 120px;
-}
-.container4{
-  flex-wrap: wrap;
-}
-.container4 img{
-margin-left: 55px;
-}
-
-.container4 h1 ,h3{
-margin-left: 20px;
-}
-.container4 ul{
-margin-left: 20px;
-}
-.container4 p{
-margin-left: 20px;
-}
-.container3{
-  flex-wrap: wrap;
-}
-.container3 img{
-margin-left: 55px;
-}
-
-.container3 h1 ,h3{
-margin-left: 20px;
-}
-.container3 ul{
-margin-left: 20px;
-}
-.container3 p{
-margin-left: 20px;
-}
-.content-wrapping{
-flex-wrap: wrap;
-display:block;
-}
-.profile-section{
-  flex-wrap: wrap;
-  display:block;
-}
-.profile-container{
-flex-wrap: wrap;
-  display:block;
-}
-.content-main-div{
-flex-wrap: wrap;
-display:block;
-}
-.footer-container{
-flex-wrap: wrap;
-/* display:block; */
-}
-.img-div{
-margin-top: 30px;
-}
-.footer-section{
-flex-wrap: wrap;
-display:block;
-}
-
-}
-
-
-
-
-@media screen and (max-width: 950px){}
-
-@media screen and (max-width: 1006px)
+.container1 ,
+.container2,
+.container3,
+.container4,
+.container5
 {
-  li {
-        display: block;
-        width: 100%;
-    }
-    ul ul {
-        position: static;
-        display: none;
-    }
-   li:hover > ul {
-        display: none;
-    }
-   .menu li{
-  position: relative;
+  flex-direction: column;
+  text-align: center;
 }
-.submenu li{
-  width: 100%;
-  z-index: 300;
+.container1 img,
+
+.container2 img,
+.container3 img,
+
+.container4 img,
+.container5 img
+{
+  width:200px;
+  margin: 20px 20px; 
+  height :180px;
+
+  /* height:auto; */
 }
-.submenu{
-  left:-100px;
-  top:0;
+.container1 ul,
+.container2 ul,
+.container3 ul,
+.container4 ul,
+.container5 ul
+{
+  list-style: none;
+  margin-right: 10px;
+ 
 }
-.container1{
-  width: 100%;
-  flex-wrap: wrap;
+.container1 h1,h3,
+.container2 h1,h3,
+.container3 h1,h3,
+.container4 h1,h3,
+.container5 h1,h3
+{
+  margin-right: 10px;
 }
-.container1 img{
-margin-left: 45px;
+p{
+  margin-right: 10px;
+}
 }
 
-.container1 h1 ,h3{
-margin-left: 20px;
+@media only screen and (max-width: 780px) 
+{
+.main-heading{
+  font-size: 24px;
 }
-.container1 ul{
-margin-left: 20px;
+.main-para p{
+  font-size: 16px;
 }
-.container1 p{
-margin-left: 20px;
-}
-.container2{
-  flex-wrap: wrap;
-}
-.container2 img{
-margin-left: 85px;
-}
-
-.container2 h1 ,h3{
-margin-left: 20px;
-}
-.container2 ul{
-margin-left: 20px;
-}
-.container2 p{
-margin-left: 20px;
-}
-.container5{
-  flex-wrap: wrap;
-}
-.container5 h1 ,h3{
-margin-left: 20px;
-}
-.container5 ul{
-margin-left: 20px;
-}
-.container5 p{
-margin-left: 20px;
-}
-.container5 img{
-margin-left: 280px;
-}
-.container4{
-  flex-wrap: wrap;
-}
-.container4 img{
-margin-left: 160px;
-}
-
-.container4 h1 ,h3{
-margin-left: 20px;
-}
-.container4 ul{
-margin-left: 20px;
-}
-.container4 p{
-margin-left: 20px;
-}
-.container3{
-  flex-wrap: wrap;
-}
-.container3 img{
-margin-left: 200px;
-}
-
-.container3 h1 ,h3{
-margin-left: 20px;
-}
-.container3 ul{
-margin-left: 20px;
-}
-.container3 p{
-margin-left: 20px;
-}
-.content-wrapping{
-flex-wrap: wrap;
-display:block;
-}
-.profile-section{
+  .content-wrapping{
   flex-wrap: wrap;
   display:block;
-}
-.profile-container{
-flex-wrap: wrap;
-  display:block;
-}
-.content-main-div{
-flex-wrap: wrap;
-display:block;
-}
-.footer-container{
-flex-wrap: wrap;
-/* display:block; */
-}
-.img-div{
-margin-top: 30px;
-}
-.footer-section{
-flex-wrap: wrap;
-display:block;
-}
-}
-
-
-@media only screen and (max-width: 1050px) {
-  /* Add styles for screens up to 1050px here */
-
-  /* Example: */
-  .navbar {
-    text-align: left; /* Adjust as needed */
   }
-
-  .hero-container {
-    padding: 20px; /* Adjust padding for larger screens */
+  .profile-section{
+    flex-wrap: wrap;
+    display:block;
   }
+.profile-container{
+  flex-wrap: wrap;
+    display:block;
+}
+.content-main-div{
+  flex-wrap: wrap;
+  /* display:block; */
+}
+.image-div{
+  margin-top: 30px;
+  /* margin-right: 20px; */
+  margin-right:5px;
+}
+ .footer-container{
+flex-wrap: wrap;
+/* display:block; */
+}
+.default-container img{
+  margin-right: -240px;
+}
+.footer-section{
+flex-wrap: wrap;
+  display:block;
+      }
+    .menu  li {
+        display: block;
+        width: 100%;
+    }
 
-  .main-heading {
-    font-size: 30px; /* Adjust font size for larger screens */
+   .submenu  ul ul {
+        position: static;
+        display: none;
+    }
+
+    li:hover > ul {
+        display: none;
+    }
+
+    .default-container img{
+  margin-right: -240px;
+}
+.menu li{
+  position: relative;
+}
+.submenu li{
+  width: 100%;
+  z-index: 300;
+}
+
+.submenu{
+  left:-140px;
+  top:0;
+}
+.container1 ,
+.container2,
+.container3,
+.container4,
+.container5
+{
+  flex-direction: column;
+  text-align: center;
+}
+.container1 img,
+
+.container2 img,
+.container3 img,
+
+.container4 img,
+.container5 img
+{
+  width:250px;
+  margin: 20px 20px; 
+  height :230px;
+
+  /* height:auto; */
+}
+.container1 ul,
+.container2 ul,
+.container3 ul,
+.container4 ul,
+.container5 ul
+{
+  list-style: none;
+  margin-right: 10px;
+ 
+}
+.container1 h1,h3,
+.container2 h1,h3,
+.container3 h1,h3,
+.container4 h1,h3,
+.container5 h1,h3
+{
+  margin-right: 10px;
+}
+p{
+  margin-right: 10px;
+}
+}
+
+@media only screen and (max-width: 980px) 
+{
+.main-heading{
+  font-size: 24px;
+}
+.main-para p{
+  font-size: 16px;
+}
+  .content-wrapping{
+  flex-wrap: wrap;
+  display:block;
   }
-  /* Add more specific styles as needed for larger screens */
+  .profile-section{
+    flex-wrap: wrap;
+    display:block;
+  }
+.profile-container{
+  flex-wrap: wrap;
+    display:block;
 }
-
-@media screen and (max-width: 1150px){}
-@media screen and (max-width: 1250px){}
-@media screen and (max-width: 1300px){}
-@media screen and (max-width: 1350px)
-
-
-{
-  li {
+.content-main-div{
+  flex-wrap: wrap;
+  /* display:block; */
+}
+.image-div{
+  margin-top: 30px;
+  /* margin-right: 20px; */
+  margin-right:5px;
+}
+ .footer-container{
+flex-wrap: wrap;
+/* display:block; */
+}
+.default-container img{
+  margin-right: -240px;
+}
+.footer-section{
+flex-wrap: wrap;
+  display:block;
+      }
+    .menu  li {
         display: block;
         width: 100%;
     }
-    ul ul {
+
+   .submenu  ul ul {
         position: static;
         display: none;
     }
-   li:hover > ul {
+
+    li:hover > ul {
         display: none;
     }
-   .menu li{
+
+    .default-container img{
+  margin-right: -240px;
+}
+.menu li{
   position: relative;
 }
 .submenu li{
   width: 100%;
   z-index: 300;
 }
+
 .submenu{
-  left:-100px;
+  left:-140px;
   top:0;
 }
-.container1{
-  width: 100%;
-  flex-wrap: wrap;
-}
-.container1 img{
-margin-left: 190px;
-}
-
-.container1 h1 ,h3{
-margin-left: 20px;
-}
-.container1 ul{
-margin-left: 20px;
-}
-.container1 p{
-margin-left: 20px;
-}
-.container2{
-  flex-wrap: wrap;
-}
-.container2 img{
-margin-left: 240px;
-}
-
-.container2 h1 ,h3{
-margin-left: 20px;
-}
-.container2 ul{
-margin-left: 20px;
-}
-.container2 p{
-margin-left: 20px;
-}
-.container5{
-  flex-wrap: wrap;
-}
-.container5 h1 ,h3{
-margin-left: 20px;
-}
-.container5 ul{
-margin-left: 20px;
-}
-.container5 p{
-margin-left: 20px;
-}
-.container5 img{
-margin-left: 400px;
-}
-.container4{
-  flex-wrap: wrap;
-}
-.container4 img{
-margin-left: 300px;
-}
-
-.container4 h1 ,h3{
-margin-left: 20px;
-}
-.container4 ul{
-margin-left: 20px;
-}
-.container4 p{
-margin-left: 20px;
-}
-.container3{
-  flex-wrap: wrap;
-}
-.container3 img{
-margin-left: 320px;
-}
-
-.container3 h1 ,h3{
-margin-left: 20px;
-}
-.container3 ul{
-margin-left: 20px;
-}
-.container3 p{
-margin-left: 20px;
-}
-.content-wrapping{
-flex-wrap: wrap;
-display:block;
-}
-.profile-section{
-  flex-wrap: wrap;
-  display:block;
-}
-.profile-container{
-flex-wrap: wrap;
-  display:block;
-}
-.content-main-div{
-flex-wrap: wrap;
-display:block;
-}
-.footer-container{
-flex-wrap: wrap;
-/* display:block; */
-}
-.img-div{
-margin-top: 30px;
-}
-.footer-section{
-flex-wrap: wrap;
-display:block;
-}
-
-}
-
-@media screen and (max-width: 1400px)
-
-
+.container1 ,
+.container2,
+.container3,
+.container4,
+.container5
 {
-  li {
-        display: block;
-        width: 100%;
-    }
-    ul ul {
-        position: static;
-        display: none;
-    }
-   li:hover > ul {
-        display: none;
-    }
-   .menu li{
-  position: relative;
-}
-.submenu li{
-  width: 100%;
-  z-index: 300;
-}
-.submenu{
-  left:-100px;
-  top:0;
-}
-.container1{
-  width: 100%;
-  flex-wrap: wrap;
-}
-.container1 img{
-margin-left: 420px;
-}
+  display:flex;
+  }
+.container1 img,
 
-.container1 h1 ,h3{
-margin-left: 20px;
-}
-.container1 ul{
-margin-left: 20px;
-}
-.container1 p{
-margin-left: 20px;
-}
-.container2{
-  flex-wrap: wrap;
-}
-.container2 img{
-margin-left: 470px;
-}
+.container2 img,
+.container3 img,
 
-.container2 h1 ,h3{
-margin-left: 20px;
-}
-.container2 ul{
-margin-left: 20px;
-}
-.container2 p{
-margin-left: 20px;
-}
-.container5{
-  flex-wrap: wrap;
-}
-.container5 h1 ,h3{
-margin-left: 20px;
-}
-.container5 ul{
-margin-left: 20px;
-}
-.container5 p{
-margin-left: 20px;
-}
-.container5 img{
-margin-left: 650px;
-}
-.container4{
-  flex-wrap: wrap;
-}
-.container4 img{
-margin-left: 520px;
-}
-
-.container4 h1 ,h3{
-margin-left: 20px;
-}
-.container4 ul{
-margin-left: 20px;
-}
-.container4 p{
-margin-left: 20px;
-}
-.container3{
-  flex-wrap: wrap;
-}
-.container3 img{
-margin-left: 560px;
-}
-
-.container3 h1 ,h3{
-margin-left: 20px;
-}
-.container3 ul{
-margin-left: 20px;
-}
-.container3 p{
-margin-left: 20px;
-}
-.content-wrapping{
-flex-wrap: wrap;
-display:block;
-}
-.profile-section{
-  flex-wrap: wrap;
-  display:block;
-}
-.profile-container{
-flex-wrap: wrap;
-  display:block;
-}
-.content-main-div{
-flex-wrap: wrap;
-display:block;
-}
-.footer-container{
-flex-wrap: wrap;
-/* display:block; */
-}
-.img-div{
-margin-top: 30px;
-}
-.footer-section{
-flex-wrap: wrap;
-display:block;
-}
-
-}
-
-
-@media screen and (max-width: 1450px)
-
-
+.container4 img,
+.container5 img
 {
-  li {
-        display: block;
-        width: 100%;
-    }
-    ul ul {
-        position: static;
-        display: none;
-    }
-   li:hover > ul {
-        display: none;
-    }
-   .menu li{
-  position: relative;
+  width:250px;
+  margin: 20px 20px; 
+  margin-top: 30px;
+  height :230px;
+
+  /* height:auto; */
 }
-.submenu li{
-  width: 100%;
-  z-index: 300;
+.container1 ul,
+.container2 ul,
+.container3 ul,
+.container4 ul,
+.container5 ul
+{
+  list-style: none;
+  margin-right: 10px;
+ 
 }
-.submenu{
-  left:-100px;
-  top:0;
+.container1 h1,h3,
+.container2 h1,h3,
+.container3 h1,h3,
+.container4 h1,h3,
+.container5 h1,h3
+{
+  margin-right: 10px;
 }
-.container1{
-  width: 100%;
-  flex-wrap: wrap;
+p{
+  margin-right: 10px;
 }
-.container1 img{
-margin-left: 420px;
 }
 
-.container1 h1 ,h3{
-margin-left: 20px;
-}
-.container1 ul{
-margin-left: 20px;
-}
-.container1 p{
-margin-left: 20px;
-}
-.container2{
-  flex-wrap: wrap;
-}
-.container2 img{
-margin-left: 470px;
-}
 
-.container2 h1 ,h3{
-margin-left: 20px;
-}
-.container2 ul{
-margin-left: 20px;
-}
-.container2 p{
-margin-left: 20px;
-}
-.container5{
-  flex-wrap: wrap;
-}
-.container5 h1 ,h3{
-margin-left: 20px;
-}
-.container5 ul{
-margin-left: 20px;
-}
-.container5 p{
-margin-left: 20px;
-}
-.container5 img{
-margin-left: 650px;
-}
-.container4{
-  flex-wrap: wrap;
-}
-.container4 img{
-margin-left: 520px;
-}
 
-.container4 h1 ,h3{
-margin-left: 20px;
-}
-.container4 ul{
-margin-left: 20px;
-}
-.container4 p{
-margin-left: 20px;
-}
-.container3{
-  flex-wrap: wrap;
-}
-.container3 img{
-margin-left: 560px;
-}
-
-.container3 h1 ,h3{
-margin-left: 20px;
-}
-.container3 ul{
-margin-left: 20px;
-}
-.container3 p{
-margin-left: 20px;
-}
-.content-wrapping{
-flex-wrap: wrap;
-display:block;
-}
-.profile-section{
-  flex-wrap: wrap;
-  display:block;
-}
-.profile-container{
-flex-wrap: wrap;
-  display:block;
-}
-.content-main-div{
-flex-wrap: wrap;
-display:block;
-}
-.footer-container{
-flex-wrap: wrap;
-/* display:block; */
-}
-.img-div{
-margin-top: 30px;
-}
-.footer-section{
-flex-wrap: wrap;
-display:block;
-}
-
-}
 
 
 
@@ -2408,7 +808,6 @@ display:block;
 
 <div class="container1"id="yaseen">
   <div class="advo" id="para1">
-    <br>
     <h1 class="prof-name">Mr. Muhammad Yaseen Bhatti</h1>
     <h3 class="sub-heading">Adovocate high court</h3>
 
@@ -2424,21 +823,15 @@ display:block;
   <li>Member Faisalabad District Bar Association</li>
   <li>Member Faisalabad Tax Bar. </li>
 </ul>
-  <br>
  <p>  <b>EX Convinor :- </b>		Alpha Lawyers forum Faisalabad.<br> 
  <b>EX President :-	 </b> 	Pakistan Awami Lawyers Movement Dist. Faisalabad.<br>
   <b>Current President :- </b>	Awami Lawyers Forum Division Faisalabad.</p>
-
 <br>
   </div>
   <div class="pic1">
-    <img src="pic8.jpg" >
-    <br>
-    <br>
+    <img src="pic8.jpg">
   </div>
- <br> 
 </div>
-
 <div class="container2"id="zobia">
   <div class="advo3" id="para1">
     <br>
